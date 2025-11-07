@@ -2,5 +2,79 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+.card{
+    display: flex;
+    background-color: rgb(78, 157, 221);
+    width: 420px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+
+}
+.card img {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F8F8FF;
+}
+
+
+#card-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFAFA;
+}
+
+.btn-adocao{
+    padding: 5px;
+    background-color: #275a22;
+    color: white;
+    font-weight: bold;
+    border-radius: 100px;
+    width: 100px;
+    font-weight: bold;
+    box-shadow: sienna;
+    
+}
+
+
+
+footer{
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+    border: 1px solid #eee;
+    color: #777;
+}
+
+
+.introducao {
+    max-width: 800px;
+    /* CENTRALIZAÇÃO: 40px em cima/baixo, 'auto' nas laterais */
+    margin: 40px auto; 
+    padding: 10px; 
+    text-align: center;
+}
+
+.introducao h1 {
+    font-size: 5em;
+    color: #4a2f1c; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.introducao p {
+    font-size: 20px;
+    color: #777;
+    line-height: 3;
+    text-align: center;
 }
 
