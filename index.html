@@ -5,39 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de Adoção de gato</title>
+   
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./css/main.css">
+
+
 </head>
 
 <body>
     <header>
-        </header>
+        <nav class="navbar navbar-expand-lg barra-navegacao">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Adoção de Gatos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
     
     <main>
 
+        
         <section class="banner">
-            <h1>Encontre seu Gatinho</h1>
-            <img src="assets/baner-gato.webp" alt="🚨 ANUNCIO 🚨">
-            <p class="texto-foco">Milhares de gatinhos esperam por um lar cheio de amor.</p> 
-            <br> 
-            <p class="texto-secundario">Role a página, conheça seus perfis e dê a um deles a chance de ter uma vida feliz!</p>
-            <br>
-            <button class="Adotar">Veja os gatos Disponíveis</button>
+            <img src="assets/img/gato-banner.png" alt="Gato fotogênico do banner">
+            <p class="texto-foco">TEXTO DE GATO</p>
+            <p class="texto-secundario">Leve um amor para casa</p>
         </section>
 
 
         <section class="banner2">
-            <img src="assets/baner-gato.webp" alt="🚨 ANUNCIO 🚨">
-            <p class="texto-foco2">Milhares de gatinhos esperam por um lar cheio de amor.</p> 
-            <br> 
-            <p class="texto-secundario2">Role a página, conheça seus perfis e dê a um deles a chance de ter uma vida feliz!</p>
-            <br>
-
+            <img src="assets/img/gato-banner.png" alt="Gato fotogênico do banner">
+            <div class="text-box">
+                <p class="texto-foco2">TEXTO <br> DE GATO</p>
+                <p class="texto-secundario2">Leve um amor para casa</p>
+            </div>
         </section>
+
+
+
 
         <section class="container" id="card-container">
 
-            
-                <div class="card">
+            <div class="card">
                     <img src="assets/img/gatoCaramelo.jfif" alt="Foto do Gato Caramelo">
     
                
@@ -45,7 +85,7 @@
                     <br>
                     <p>Doce na cor, doce no coração! Brincalhão e extremamente carinhoso.</p>
                     <br>
-                    <button class="btn-adocao">Adotar</button>
+                    <button>Adotar</button>
                 </div>
            
             
@@ -57,7 +97,7 @@
                     <br>
                     <p>Um Gatinho elegante e calmo, perfeito para longas sonecas no sofá.</p>
                     <br>
-                    <button class="btn-adocao">Adotar</button>
+                    <button>Adotar</button>
                 </div>
             
             
@@ -68,7 +108,7 @@
                     <br>
                     <p>Um gatinho pequeno e feliz.</p>
                     <br>
-                    <button class="btn-adocao">Adotar</button>
+                    <button>Adotar</button>
                 </div>
           
             
@@ -78,6 +118,9 @@
     <footer>
         <p>Desenvolvido por Sofia Caroline no IOS 🤎</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
 </body>
 
 </html>
