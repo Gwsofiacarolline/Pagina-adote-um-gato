@@ -117,6 +117,33 @@
     font-size: 20px;
 }
 
+.logo-footer{
+    height: 25px;
+    
+}
+
+.container-footer{
+    flex-direction: column;
+   align-items: center;
+   margin: 50px 204px 50px 204px;
+}
+
+#layer1-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: var(--destaque-escuro);
+
+}
+
+p{
+    background-color: var(--cor-principal);
+}
+
+
+
 @media screen and (max-width:430px){
     
     header{
