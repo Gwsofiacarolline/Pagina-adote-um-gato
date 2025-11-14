@@ -142,6 +142,99 @@ p{
     background-color: var(--cor-principal);
 }
 
+/* Estilo Básico do Rodapé */
+footer {
+    background-color: #171a21; /* Cor de fundo escura, comum em footers */
+    color: #b8b6b4; /* Cor do texto claro */
+    padding: 30px 0; /* Espaçamento interno superior e inferior */
+    text-align: center; /* Centraliza o texto por padrão */
+    font-family: sans-serif; /* Fonte de exemplo */
+}
+
+/* Container Principal para limitar a largura e aplicar Flexbox */
+.container-footer {
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 0 20px; /* Espaçamento lateral */
+}
+
+/* Estilo para as Logos */
+#layer1-footer {
+    display: flex; /* Permite que as logos fiquem lado a lado */
+    justify-content: center; /* Centraliza as logos */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-footer {
+    max-height: 40px; /* Define um tamanho razoável para as logos */
+    margin: 0 10px;
+}
+
+/* Estilo para a Seção de Redes Sociais */
+.social-media {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
+    gap: 15px; /* Espaço entre os ícones */
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 30px; /* Tamanho dos ícones */
+    height: 30px;
+    transition: opacity 0.3s; /* Efeito de hover suave */
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
+
+/* Estilo para os Parágrafos de Texto e Links */
+.copyright, .links {
+    font-size: 0.85em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.links a {
+    color: #b8b6b4; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    margin: 0 3px;
+}
+
+.links a:hover {
+    color: #ffffff; /* Cor dos links ao passar o mouse */
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .container-footer {
+        display: grid;
+        grid-template-areas:
+            "logos social"
+            "copyright copyright"
+            "links links";
+        grid-template-columns: 1fr auto;
+        gap: 10px 0;
+        text-align: left;
+    }
+
+    #layer1-footer {
+        grid-area: logos;
+        justify-content: flex-start;
+    }
+
+    .social-media {
+        grid-area: social;
+        justify-content: flex-end;
+    }
+
+    .copyright { grid-area: copyright; }
+    .links { grid-area: links; }
+}
+
+
+
 
 
 @media screen and (max-width:430px){
